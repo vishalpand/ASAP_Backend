@@ -11,20 +11,18 @@ import org.springframework.security.web.SecurityFilterChain;
 public class SecurityConfig {
 
     
-	@SuppressWarnings({ "removal", "deprecation" })
+	
 	@Bean
 	public SecurityFilterChain customSecurityFilterChain(HttpSecurity http) throws Exception {
-	    http
-	        .cors()  // Enable CORS, if you have custom CORS configuration
-	        .and()
-	        .csrf().disable()
-	        .authorizeRequests()
-	            .anyRequest().permitAll()  // Allow all requests without authentication
-	        .and()
-	        .httpBasic();  // Optional: still enables HTTP Basic if you plan to use it later
+		http.csrf().disable()  
+        .authorizeRequests()
+            .requestMatchers("/**")  
+            .permitAll()
+        .anyRequest()
+            .permitAll();  
 
-	    return http.build();
-	}
+    return http.build();
+}
 
 }
 
