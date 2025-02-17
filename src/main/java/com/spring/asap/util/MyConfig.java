@@ -13,7 +13,7 @@ public class MyConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("http://localhost:8100", "https://asap.up.railway.app") // 
+                .allowedOrigins("http://localhost:8100", "https://asap.up.railway.app", "capacitor://localhost") // 
                 .allowedMethods("GET", "POST", "PUT", "DELETE")
                 .allowedHeaders("*")
                 .allowCredentials(true)
