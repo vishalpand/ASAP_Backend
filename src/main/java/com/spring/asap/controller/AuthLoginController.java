@@ -14,7 +14,7 @@ import com.spring.asap.services.AuthLoginService;
 import com.spring.asap.util.ServiceResponse;
 
 @RestController
-@CrossOrigin(origins = {"http://localhost:8100", "https://asap.up.railway.app", "capacitor://localhost"})
+@CrossOrigin(origins ="*")
 @RequestMapping("/api/users")
 
 public class AuthLoginController {
