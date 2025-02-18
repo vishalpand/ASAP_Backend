@@ -1,6 +1,7 @@
 package com.spring.asap.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -9,12 +10,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.spring.asap.dto.AuthLoginDTO;
 import com.spring.asap.entities.AuthLogin;
-import com.spring.asap.entities.UserDetails;
 import com.spring.asap.services.AuthLoginService;
 import com.spring.asap.util.ServiceResponse;
 
 @RestController
+@CrossOrigin(origins = {"http://localhost:8100", "https://asap.up.railway.app", "capacitor://localhost"})
 @RequestMapping("/api/users")
+
 public class AuthLoginController {
 	
 	
