@@ -39,7 +39,8 @@ public class SecurityConfig {
             "http://localhost:8100", // Local Ionic App
             "capacitor://localhost", // Android Emulator
             "http://10.0.2.2:8100", // Android Emulator Accessing Localhost
-            "https://asap.up.railway.app" // Production
+            "https://asap.up.railway.app",
+            "https://localhost"// Production
         ));
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(List.of("*"));
