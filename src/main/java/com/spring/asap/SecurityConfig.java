@@ -42,6 +42,8 @@ public class SecurityConfig {
             "https://asap.up.railway.app",
             "https://localhost"// Production
         ));
+        
+        System.out.println("its called ");
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(List.of("*"));
         config.setExposedHeaders(List.of("Authorization", "Content-Type"));
