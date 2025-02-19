@@ -18,7 +18,7 @@ import com.spring.asap.util.ServiceResponse;
 
 @RestController
 @RequestMapping("/api/users")
-@CrossOrigin(origins ="*")
+//@CrossOrigin(origins ="*")
 public class UserController {
 
 	@Autowired

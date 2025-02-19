@@ -14,9 +14,8 @@ import com.spring.asap.services.AuthLoginService;
 import com.spring.asap.util.ServiceResponse;
 
 @RestController
-@CrossOrigin(origins ="*")
+//@CrossOrigin(origins ="*")
 @RequestMapping("/api/users")
-
 public class AuthLoginController {
 	
 	

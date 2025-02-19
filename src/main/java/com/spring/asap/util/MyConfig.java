@@ -7,15 +7,10 @@
 //@Configuration
 //public class MyConfig implements WebMvcConfigurer {
 //
-//	@Override
-//	public void addCorsMappings(CorsRegistry registry) {
-//	    registry.addMapping("/**")
-//	            .allowedOrigins("http://localhost:8100", "https://asap.up.railway.app", "capacitor://localhost")
-//	            .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
-//	            .allowedHeaders("*")
-//	            .exposedHeaders("Authorization", "Content-Type")
-//	            .allowCredentials(true)
-//	            .maxAge(3600);
-//	}
+//	
+//	
+//	
+//	
+//	
 //
 //}
